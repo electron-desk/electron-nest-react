@@ -43,6 +43,13 @@ const createMenu = () => {
             await shell.openExternal('https://space.bilibili.com/388985971');
           },
         },
+        {
+          label: 'react+ts+redux+antd接口文档',
+          click: async () => {
+            await mainWindow.webContents.session.clearStorageData();
+            await shell.openExternal('http://localhost:3006/api');
+          },
+        },
       ],
     },
   ];
