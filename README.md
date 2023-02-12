@@ -1,73 +1,63 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+<!--
+ * @Author: 最爱白菜吖<1355081829@qq.com>
+ * @Date: 2023-02-09 14:56:19
+ * @LastEditTime: 2023-02-13 01:25:26
+ * @LastEditors: 最爱白菜吖
+ * @Description: 十年码农!精通react、vue、node、electron、php、go的拼写
+ * @公众账号: 乐编码
+ * @vscode主题: Halcyon Theme
+ * @FilePath: \electron-nest-react\README.md
+ * Copyright (c) 2022 by 最爱白菜吖, All Rights Reserved
+-->
+> 说明：`electron-vite-vue` 和 `electron-vite-react` 没有接口服务，想要查看最终效果，请移步 `electron-nest-admin`
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# 相关项目
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## gitee
 
-## Description
+[electron-vite-vue](https://gitee.com/electron-nest-admin/electron-vite-vue)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[electron-vite-react](https://gitee.com/electron-nest-admin/electron-vite-react)
 
-## Installation
+[electron-nest-admin](https://gitee.com/electron-nest-admin/electron-nest-admin)
+[electron-nest-react](https://gitee.com/electron-nest-admin/electron-nest-react.git)
+## github
 
-```bash
-$ npm install
+[electron-vite-vue](https://github.com/electron-desk/electron-vite-vue)
+
+[electron-vite-react](https://github.com/electron-desk/electron-vite-react.git)
+
+[electron-nest-admin](https://github.com/electron-desk/electron-nest-admin)
+[electron-nest-react](https://github.com/electron-desk/electron-nest-react.git)
+
+
+# 安装指南
+
+## 安装 electron 镜像加速
+
+```shell
+npm config set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+
 ```
 
-## Running the app
+## electron-builder 镜像加速
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```shell
+npm config set ELECTRON_BUILDER_BINARIES_MIRROR=http://npm.taobao.org/mirrors/electron-builder-binaries/
 ```
 
-## Test
+# 如何运行
 
-```bash
-# unit tests
-$ npm run test
+## 开发模式
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+```shell
+npm run dev
 ```
 
-## Support
+## 编译
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```shell
+npm run electron:build
+```
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+> PS: 编译后的内容会输出到 build-electron 目录下。打包时自动采用 bytenode 进行加密，并且采用 v8-compile-cache 优化加速
